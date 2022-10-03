@@ -7,12 +7,11 @@ import React from 'react';
 export default function Login() {
   return (
     <View style={styles.container}>
-
-
-      <TextInput style={styles.input1} placeholder="Username" />
-      <TextInput style={styles.input2} placeholder="Password" />
+      <Text  style={{color: 'black', fontSize: 50,  marginTop: '-34%'}}> Login</Text>
+      <TextInput placeholderTextColor="black" style={styles.input1} placeholder="Username" />
+      <TextInput placeholderTextColor="black" style={styles.input2} placeholder="Password" />
       <TouchableOpacity style={styles.btn}>
-        <Text style={{color: '#fffff', fontSize: 20}}> Login</Text>
+        <Text style={{color: '#ffffff', fontSize: 20}}> Login</Text>
       </TouchableOpacity>
     </View>
   );
@@ -20,7 +19,7 @@ export default function Login() {
 
 const styles = StyleSheet.create({
   input1: {
-    marginTop: '40%',
+    marginTop: '30%',
     borderWidth: 1,
     padding: 10,
     width: '80%',
@@ -36,16 +35,19 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
+    height:860,
+    backgroundColor:'#ffffff'
     // width:'100vw',
   },
   btn: {
     width: '60%',
     padding: 5,
     backgroundColor: 'green',
-    height: 50,
+    height: 60,
+    width :300,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: '3%',
+    marginTop: '15%',
     borderRadius: 100,
   },
 });
