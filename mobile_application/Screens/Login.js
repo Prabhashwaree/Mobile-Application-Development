@@ -13,6 +13,9 @@ export default function Login() {
       <TouchableOpacity style={styles.btn}>
         <Text style={{color: '#ffffff', fontSize: 20}}> Login</Text>
       </TouchableOpacity>
+      <TouchableOpacity>
+              <Text style={styles.signupText}>Sign Up</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -47,7 +50,12 @@ const styles = StyleSheet.create({
     width :300,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: '15%',
+    marginTop: '10%',
     borderRadius: 100,
   },
+  signupText:{
+    color: 'black',
+    fontSize: 20, 
+    marginTop: '14%'
+  }
 });
